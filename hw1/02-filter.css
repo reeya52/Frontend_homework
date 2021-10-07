@@ -1,21 +1,21 @@
 /* Add your code here */
-
+body{
+  margin: 1px;
+}
 .flex-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .flex-container > div {
     background-color: white;
-    width: auto;
-    margin: 20px;
-    text-align: center;
-    line-height: 40px;
+    margin: 5px;
+    text-align: left;
+    line-height: 30px;
     font-size: 15px;
   }
 
-@media only screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
 	.flex-container{
    		 width: 100%;
          }
