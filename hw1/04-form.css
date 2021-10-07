@@ -1,1 +1,71 @@
 /* Add your code here */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #1a4357;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: white;
+}
+h1{
+    text-align: center;
+    color: #0173a0;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea
+{
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    outline: 0;
+    width: 100%;
+    margin-bottom: 3px;
+}
+input:focus, textarea:focus
+{
+    box-shadow: 0 0 2px rgba(192, 63, 63, 0.932);
+    border: 2px solid rgba(202, 11, 11, 0.801);
+}
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin: 0 2px 6px 0;
+}
+select{
+    padding: 4px;
+    height: 32px;
+    border-radius: 2px;
+}
+button[type="submit"]
+{
+    width: 49%;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    background-color: #0173a0; 
+    color: white;
+}
+    button[type="reset"]
+{
+    width: 49%;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    color: #0173a0;
+}
+button[type=submit]:hover {
+    background-color: #010d11;
+  }
+@media screen and (min-width: 480px) {
+    form{
+        max-width: 480px;
+    }
+}
+

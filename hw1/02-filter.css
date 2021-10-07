@@ -1,1 +1,30 @@
 /* Add your code here */
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > div {
+    background-color: white;
+    width: auto;
+    margin: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+  }
+
+@media only screen and (max-width: 620px) {
+	.flex-container{
+   		 width: 100%;
+         }
+}
+
+.img2{filter: grayscale(150%);}
+.img3{filter: blur(3px);}
+.img4{filter: invert(100%);}
+.img5{filter: brightness(150%);}
+.img6{filter: saturate(9);}
+.img7{filter: sepia(200%);}
+.img8{filter: contrast(200%);}

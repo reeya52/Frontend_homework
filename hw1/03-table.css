@@ -4,3 +4,35 @@
 */
 
 /* Add your code here */
+
+table,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color:cadetblue;
+    color: white;
+    text-align: center;
+}
+tr:hover{
+    background-color: #255;
+}
+
+.ID-block, .year-block{
+    text-align: center;
+}
+
+.name-block, .author-block{
+    padding-left: 10px;
+}
+
+th, td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 480px) {
+    form{
+        max-width: 480px;
+    }
+}
