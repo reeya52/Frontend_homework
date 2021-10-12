@@ -16,7 +16,7 @@ th{
     text-align: center;
 }
 tr:hover{
-    background-color: #255;
+    background-color: rgb(131, 226, 218);
 }
 
 .ID-block, .year-block{
