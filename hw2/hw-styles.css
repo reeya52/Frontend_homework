@@ -73,6 +73,7 @@ nav li a:active{
   grid-column: 1 / span 2;
 }
 .grid-item.item10{
+  height: 90px;
   grid-column: 2 / span 4;
 }
 @media screen and (max-width: 450px) {
@@ -99,6 +100,7 @@ nav li a:active{
   }
   .grid-item.item10{
     grid-column: 1 / span 4;
+    height: 90px;
   }
 }
 /* Code for exercise 05-calendar */
