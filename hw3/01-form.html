@@ -6,14 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Form Exercise</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw1/04-form.css" />
     <script defer src="01-form.js"></script>
   </head>
   <body class="bg-dark text-dark">
     <main>
-        <h1>Contact Form</h1>
       <form action="">
+        <h1>Contact Form</h1>
         <!-- Step 1 - Insert your previous form here -->
         <!-- Step 2 - Address any responsiveness and/or accessibility issues -->
+        <div>
+          <label for="name" >Name<span style="color: #0173a0;">(required)</span></label>
+          <br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email<span style="color: #0173a0;">(required)</span></label>
+          <br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="registration-status">Registration Status:</label>
+          <br>
+          <select name="reg-status" id="registration-status">
+          <option value="">Choose an option</option>
+          <option value="registered">Registered</option>
+          <option value="non-registered">Not Registered</option>
+          <option value="waitlist">Waitlist</option>
+          </select>
+        </div>
+        <br>
+        <fieldset class="form-element form-radios">
+          <legend>Class Section:</legend>
+          <input type="radio" id="CS410-P" name="section" value="CS410-P" />
+          <label for="CS410-P">CS410 P</label>
+          <input type="radio" id="CS510" name="section" value="CS510" />
+          <label for="CS510">CS510</label>
+        </fieldset>
+        <br>
+        <fieldset class="form-element form-checkboxes">
+          <legend>Have you taken any of the following courses?</legend>
+          <input type="checkbox" id="option1" name="courses">
+          <label for="option1">Programming Languages</label>
+          <br>
+          <input type="checkbox" id="option2" name="courses">
+          <label for="option2">Operating Systems</label>
+          <br>
+          <input type="checkbox" id="option3" name="courses">
+          <label for="option3">Full Stack Web Development</label>
+        </fieldset>
+        <br>
+        <div>
+          <label for="comments">Anything else?</label>
+          <br>
+          <textarea name="comments" id="comments" rows="3"></textarea>
+        </div>
+        <br>
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
       </form>
     </main>
   </body>
