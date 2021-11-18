@@ -11,3 +11,19 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
 }
+
+@media screen and (max-width: 770px) {
+	.characters{
+   		width: 98%;
+      }
+}
+
+@media screen and (max-width: 620px) {
+	.characters{
+   		width: 100%;
+      }
+}
+
+div:hover{
+  background-color: var(--teal);
+}
